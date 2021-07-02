@@ -7,13 +7,20 @@
         font-family: "Custom Font 123";
           src: url("PT-Root-UI_Regular.woff2") format("woff2");
       }
-      h1 {
+      @font-face {
+        font-family: "Custom Font 123 Bold";
+          src: url("PT-Root-UI_Bold.woff2") format("woff2");
+      }
+      .regular {
        font-family: 'Custom Font 123', Helvetica, serif;
-        font-feature-settings: 'tnum' on, 'lnum' on;
+      }
+      .bold {
+       font-family: 'Custom Font 123 Bold', Helvetica, serif;
       }
     </style>
   </head>
   <body>
-    <h1>Hello there!</h1>
+    <p class="regular">Hello there!</p>
+    <p class="bold">Hello there!</p>
   </body>
 </html>
